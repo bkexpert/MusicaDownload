@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MusiFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand"><div class="logo">♪</div> MusiFlow <span>projeto acadêmico</span></div>
+    <span class="tag">MP3 • MP4</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">DOWNLOAD DE CONTEÚDO AUTORIZADO</div>
+      <h1>Seu conteúdo.<br><b>Sua qualidade.</b></h1>
+      <p>Cole um link direto para uma mídia que você tenha autorização para baixar, escolha o formato e a qualidade.</p>
+    </section>
+
+    <section class="card">
+      <div class="input-row">
+        <input id="url" type="url" placeholder="https://exemplo.com/arquivo.mp4">
+        <button id="inspect">Analisar</button>
+      </div>
+      <div id="status" class="status"></div>
+
+      <div id="options" class="hidden">
+        <div class="info">
+          <strong id="filename">Arquivo</strong>
+          <small id="source">Fonte</small>
+        </div>
+
+        <div class="controls">
+          <label>Formato
+            <select id="format">
+              <option value="mp3">MP3 — áudio</option>
+              <option value="mp4">MP4 — vídeo</option>
+            </select>
+          </label>
+
+          <label>Qualidade
+            <select id="quality">
+              <option value="128k">128 kbps</option>
+              <option value="192k" selected>192 kbps</option>
+              <option value="256k">256 kbps</option>
+              <option value="320k">320 kbps</option>
+            </select>
+          </label>
+        </div>
+
+        <button id="download" class="download">Converter e baixar</button>
+      </div>
+    </section>
+
+    <div class="features">
+      <article><b>⚡ Simples</b><p>Fluxo direto para um projeto acadêmico.</p></article>
+      <article><b>◈ Qualidade</b><p>Opções de áudio e vídeo configuráveis.</p></article>
+      <article><b>✓ Responsivo</b><p>Funciona em computador e celular.</p></article>
+    </div>
+
+    <p class="note">Use somente arquivos e conteúdos para os quais você tenha autorização de download. O backend deste projeto trabalha com URLs diretas de mídia.</p>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
